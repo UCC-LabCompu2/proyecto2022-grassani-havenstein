@@ -1,0 +1,18 @@
+#titulo{
+    text-align: left;
+    margin: 10px;
+    mso-padding-top-alt: 5px;
+
+}
+div{
+    border: 5px;
+    margin: 10px;
+}
+header{
+    text-align: center;
+
+}
+body{
+    text-align: center;
+    background: linear-gradient(to right, #4682b4, #2f4f4f);
+}
