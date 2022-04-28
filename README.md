@@ -1,4 +1,4 @@
-# No Internet Game
+# No Internet Game (probando)
 ###Autores
 Desarrollado por: Carolina Havenstein y Tobias Grassani.
 En la catedra: laboratorio de Computación II, Universidad Católica de Córdoba.
