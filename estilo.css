@@ -1,12 +1,13 @@
 #titulo{
+    font-size: 3em;
     text-align: left;
-    margin: 10px;
-    mso-padding-top-alt: 5px;
-
+    color: #ffffff;
 }
+
+
 div{
-    border: 5px;
-    margin: 10px;
+    border: 5em;
+    margin: 10em;
 }
 header{
     text-align: center;
@@ -15,4 +16,19 @@ header{
 body{
     text-align: center;
     background: linear-gradient(to right, #4682b4, #2f4f4f);
+    margin: 10px;
+}
+#principal{
+    width: 80px;
+    float: left;
+    border-radius: 50%;
+}
+table, tr, td, th{
+    border: 1px solid #000000;
+    text-align: center;
+
+}
+a:link, a:visited{
+    color: #ffffff
+
 }
