@@ -1,7 +1,7 @@
 #titulo{
     font-size: 3em;
     text-align: left;
-    color: #ffffff;
+    color: black;
 }
 #principal{
     width: 80px;
@@ -9,7 +9,6 @@
     border-radius: 50%;
 }
 table, tr, td, th{
-    border: 1px solid #000000;
     text-align: center;
 
 }
@@ -18,22 +17,26 @@ a:link, a:visited{
     text-underline-mode: ;
 }
 header{
-    background: black;
+    background: dimgrey;
+    height: 90px;
+    width: 100%;
 }
 .container{
     float: left;
-    width: 65%;
+    width: 60%;
 }
 form{
     float: right;
-    width: 35%;
+    width: 30%;
 }
 .page{
-    margin: 5em;
     text-align: center;
-    background: linear-gradient(to right, #4682b4, #2f4f4f);
+    background: white;
     display: table;
     width: 100%;
+}
+body{
+    background: white;
 }
 #juego{
     border: 1px #ffffff;

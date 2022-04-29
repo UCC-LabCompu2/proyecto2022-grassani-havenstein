@@ -49,16 +49,16 @@ Estructura de Proyecto Lab de Compu II - 2022
 - [ ] Los ids de los elementos deben ser unívocos
 
 ### Sobre el CSS
-- [ ] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
-- [ ] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
+- [x] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
+- [x] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
 - [ ] Se debe emplear pseudoclase
 - [ ] No emplear !important
 
 ### Sobre Accesibilidad:
-- [ ] Toda imagen debe tener su etiqueta alt
-- [ ] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
-- [ ] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia)
-- [ ] Si hay una tabla en la página, debe contener ```<caption></caption>```
+- [x] Toda imagen debe tener su etiqueta alt
+- [x] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
+- [x] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia)
+- [x] Si hay una tabla en la página, debe contener ```<caption></caption>```
 
 ### Sobre las correcciones
 * Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega

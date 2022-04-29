@@ -10,102 +10,105 @@
     <link rel="stylesheet" href="estilo.css" type="text/css">
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-con">
 
-
 </head>
 <body>
 <div class="page">
-<header>
-    <img id="principal" src="imagenes/no_wifi.png" alt="no wifi">
-    <a href="index.html" target="_self">
-        <h1 id="titulo"><b>NO INTERNET GAME</b></h1>
-    </a>
-</header>
-<nav>
-    <h3 id="subtitulo1">Cómo Jugar</h3>
-    <h3 id="subtitulo2">Top Scores</h3>
-</nav>
-<article>
-    <canvas id="juego" width="500" height="350">
-    </canvas>
+    <header>
+        <img id="principal" src="imagenes/no_wifi.png" alt="logo sin conexión de wifi">
+        <a href="index.html" target="_self">
+            <h1 id="titulo"><b>No Internet Game</b></h1>
+        </a>
+    </header>
+    <nav>
+        <h3 id="subtitulo1">Cómo Jugar</h3>
+        <h3 id="subtitulo2">Top Scores</h3>
+    </nav>
+    <article>
+        <canvas id="juego" width="500" height="350">
+        </canvas>
 
-    <section class="container">
+        <section class="container">
+            <div>
+                <img id="trex" src="imagenes/clasico.png" alt="dinosaurio" width="550" ">
+            </div>
+        </section>
+
+        <aside>
+            <form>
+                <p>
+                    <label for="nombre">Nombre: <input type="text" name="nombre" placeholder="Nombre" id="nombre" size="15">
+                </p>
+                <p>
+                    <label for="personaje">Personaje:</label>
+                    <select id="personaje">
+                        <option value="dinosaurio">Dinosaurio</option>
+                        <option value="shrek">Shrek</option>
+                        <option value="perroSalchicha">Perro Salchicha</option>
+                        <option value="mikeWazowski">Mike Wazowski</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="fondo">Fondo:</label>
+                    <select id="fondo">
+                        <option value="clasico">Clásico</option>
+                        <option value="desierto">Desierto</option>
+                        <option value="ciudad">Ciudad</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="button"><b>JUGAR</b></button>
+                </p>
+            </form>
+        </aside>
+
+        <section>
+            <div>
+                <border> </border>
+                <p>
+                    <b>COMO JUGAR</b>
+                </p>
+                <p>
+                    El objetivo es esquivar la mayor cantidad de obstáculos.
+                </p>
+                <p>
+                    Comandos:
+                </p>
+                <p>
+                    Saltar
+                </p>
+                <img src="imagenes/teclas_flechas.png" alt="flechas teclado">
+                <p>
+                    Agacharse
+                </p>
+            </div>
+        </section>
+    </article>
+
+    <footer>
         <div>
-            <img id="trex" src="imagenes/clasico.png" alt="dinosaur" width="550" ">
+            <b>TOP SCORES</b>
+            <table>
+                <tbody>
+                <tr>
+                    <td>1ST</td>
+                    <td>JOSH</td>
+                    <td>003892</td>
+                </tr>
+                <tr>
+                    <td>2ND</td>
+                    <td>MARK</td>
+                    <td>002235</td>
+                </tr>
+                <tr>
+                    <td>3RD</td>
+                    <td>CARL</td>
+                    <td>002041</td>
+                </tr>
+                </tbody>
+                <caption>Tabla con Top Scores</caption>
+            </table>
         </div>
-    </section>
-    <section>
-        <div>
-            <border> </border>
-            <p>
-                <b>COMO JUGAR</b>
-            </p>
-            <p>
-                El objetivo es esquivar la mayor cantidad de obstáculos.
-            </p>
-            <p>
-                Comandos:
-            </p>
-            <p>
-                Saltar
-            </p>
-            <img src="imagenes/teclas_flechas.png" alt="flechas teclado">
-            <p>
-                Agacharse
-            </p>
-        </div>
-    </section>
-</article>
-<aside>
-    <form>
-        <p>
-            Nombre: <input type="text" name="nombre" placeholder="Nombre" size="15">
-        </p>
-        <p>
-            Personaje:
-            <select>
-                <option value="dinosaurio">Dinosaurio</option>
-                <option value="shrek">Shrek</option>
-                <option value="perroSalchicha">Perro Salchicha</option>
-                <option value="mikeWazowski">Mike Wazowski</option>
-            </select>
-        </p>
-        <p>
-            Fondo:
-            <select>
-                <option value="clasico">Clásico</option>
-                <option value="desierto">Desierto</option>
-                <option value="ciudad">Ciudad</option>
-            </select>
-        </p>
-        <p>
-            <button type="button"><b>JUGAR</b></button>
-        </p>
-    </form>
-</aside>
-<footer>
-    <div>
-        <b>TOP SCORES</b>
-        <table>
-            <tbody>
-            <tr>
-                <td>1ST</td>
-                <td>JOSH</td>
-                <td>003892</td>
-            </tr>
-            <tr>
-                <td>2ND</td>
-                <td>MARK</td>
-                <td>002235</td>
-            </tr>
-            <tr>
-                <td>3RD</td>
-                <td>CARL</td>
-                <td>002041</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-</footer>
+    </footer>
 
 
 </div>
