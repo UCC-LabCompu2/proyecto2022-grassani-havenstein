@@ -3,21 +3,6 @@
     text-align: left;
     color: #ffffff;
 }
-
-
-div{
-    border: 5em;
-    margin: 10em;
-}
-header{
-    text-align: center;
-
-}
-body{
-    text-align: center;
-    background: linear-gradient(to right, #4682b4, #2f4f4f);
-    margin: 10px;
-}
 #principal{
     width: 80px;
     float: left;
@@ -29,6 +14,26 @@ table, tr, td, th{
 
 }
 a:link, a:visited{
-    color: #ffffff
-
+    color: #ffffff;
+    text-underline-mode: ;
+}
+header{
+    background: black;
+}
+.page{
+    display: table;
+    width: 100%;
+}
+.container{
+    float: left;
+    width: 65%;
+}
+form{
+    float: right;
+    width: 35%;
+}
+.page{
+    margin: 5em;
+    text-align: center;
+    background: linear-gradient(to right, #4682b4, #2f4f4f);
 }
