@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta content="Tobias Grassani - Carolina Havenstein" name="author">
@@ -9,33 +9,32 @@
     <title>No Internet Game</title>
     <link rel="stylesheet" href="estilo.css" type="text/css">
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-con">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="page">
     <header>
-        <img id="principal" src="imagenes/no_wifi.png" alt="logo sin conexión de wifi">
-        <a href="index.html" target="_self">
+        <img id="sinwifi" src="https://www.systelmexico.com/wp-content/uploads/2020/03/residencial-wifi.gif" alt="logo sin conexión de wifi">
             <h1 id="titulo"><b>No Internet Game</b></h1>
-        </a>
         <nav>
-            <h3 id="subtitulo1">Cómo Jugar</h3>
-            <h3 id="subtitulo2"><a href=#topscores>Top Scores</a></h3>
+            <a href="#comojugar"><h3 id="subtitulo1">Como Jugar</h3></a>
+            <a href=#topscores><h3 id="subtitulo2">Top Scores</h3></a>
         </nav>
     </header>
 
     <article>
 
-        <section class="container">
+        <section class="juego">
             <div>
-                <img id="trex" src="imagenes/clasico.png" alt="dinosaurio" width="550" ">
+                <img id="trex" src="imagenes/clasico.png" alt="dinosaurio">
             </div>
         </section>
-
         <aside>
             <form>
                 <p>
-                    <label for="nombre">Nombre: <input type="text" name="nombre" placeholder="Nombre" id="nombre" size="15">
+                    <label>Nombre: <input type="text" name="nombre" placeholder="Nombre" id="nombre"></label>
                 </p>
                 <p>
                     <label for="personaje">Personaje:</label>
@@ -55,37 +54,31 @@
                     </select>
                 </p>
                 <p>
-                    <button type="button"><b>JUGAR</b></button>
+                    <button id="botonjugar" type="button"><b>JUGAR</b></button>
                 </p>
             </form>
         </aside>
-
-
     </article>
-    <section>
-        <div>
-            <border> </border>
-            <p>
-                <b>COMO JUGAR</b>
-            </p>
-            <p>
-                El objetivo es esquivar la mayor cantidad de obstáculos.
-            </p>
-            <p>
-                Comandos:
-            </p>
-            <p>
-                Saltar
-            </p>
-            <img id="imagenteclas" src="imagenes/teclas_flechas.png" alt="flechas teclado">
-            <p>
-                Agacharse
-            </p>
-        </div>
-    </section>
-
-
-    <footer>
+            <div id="comojugar">
+                <p>
+                    <b>COMO JUGAR</b>
+                </p>
+                <p>
+                    El objetivo es esquivar la mayor cantidad de obstáculos.
+                </p>
+            </div>
+            <div id="controles">
+                <p>
+                    <b>CONTROLES:</b>
+                </p>
+                <p>
+                    Saltar
+                </p>
+                <img id="imagenteclas" src="imagenes/teclas_flechas.png" alt="flechas teclado">
+                <p>
+                    Agacharse
+                </p>
+            </div>
         <div id="topscores">
             <b>TOP SCORES</b>
             <table>
@@ -109,7 +102,6 @@
                 <caption>Tabla con Top Scores</caption>
             </table>
         </div>
-    </footer>
 
 
 </div>

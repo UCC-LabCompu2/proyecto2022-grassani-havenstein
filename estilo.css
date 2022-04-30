@@ -1,61 +1,10 @@
-#titulo{
-    font-size: 3em;
-    text-align: left;
-    color: black;
-    padding-top: 35px;
-}
-#principal{
-    width: 80px;
-    float: left;
-    border-radius: 50%;
-    margin-right: 15px;
-    margin-left: 20px;
-    margin-top: 30px;
-}
-
-
-nav
-{
-    position: absolute;
-    padding-left: 600px;
-    top: 20px;
-
-}
-
-#subtitulo1
-{
-    background-color: white; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
+.page{
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    color: black;
-    border-color: black;
-}
-#subtitulo2
-{
-    background-color: white; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    color: black;
-    border-color: black;
-}
-
-table, tr, td, th{
-    text-align: center;
-
-}
-a:link, a:visited{
-    color: black;
-    text-underline-mode: ;
+    background: white;
+    display: table;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 3.5em;
 }
 header{
     background: dimgrey;
@@ -63,45 +12,118 @@ header{
     height: 120px;
     width: 100%;
 }
-
-article
-{
-    margin-top: 90px;
-}
-
-.container{
+#sinwifi{
+    width: 80px;
     float: left;
-    width: 60%;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+#titulo{
+    font-size: 3em;
+    text-align: left;
+    color: black;
+    padding-top: 35px;
+}
+#subtitulo1 {
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    border-radius: 10%;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: white;
+}
+#subtitulo2 {
+    background-color: white;
+    border-radius: 10%;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+}
+nav {
+    position: absolute;
+    padding-left: 600px;
+    top: 20px;
+}
+article {
+    margin-top: 2em;
+}
+.juego{
+    float: left;
+    width: auto;
+    border: 1px solid black;
+    margin-left: 4em;
+    padding: 2em;
+}
+#trex{
+    width: 50em;
 }
 form{
-    float: right;
-    width: 30%;
+    font-size: 2em;
+    float: left;
+    width: auto;
+    text-align: center;
+    padding: 1em;
     background-color: darkgrey;
 }
+#botonjugar{
+    font-size: 1.3em;
+    text-align: center;
+    color: black;
+    border-radius: 10%;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: white;
 
-section
-
-{
+}
+section {
     margin-left: auto;
     margin-right: auto;
-    width: 15em
+    width: 15em;
 }
-#imagenteclas
-{
+#comojugar{
+    float: left;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
+    margin-left: 6em;
+    padding: 2em;
+    background-color: darkgrey;
+}
+#topscores{
+    float: right;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-right: 2em;
+    padding: 1.8em;
+    background-color: darkgrey;
+}
+#controles{
+    float: right;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-right: 7.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-color: darkgrey;
+
+}
+#imagenteclas {
     width: 40px;
 }
 
 
-.page{
-    text-align: center;
-    background: white;
-    display: table;
-    width: 100%;
-}
 body{
     background: white;
 }
-#juego{
-    border: 1px #ffffff;
-    border-radius: 50%;
+
+
+a:link, a:visited, a:active {
+    text-decoration:none;
 }
+
