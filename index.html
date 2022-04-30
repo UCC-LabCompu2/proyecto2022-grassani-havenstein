@@ -18,14 +18,13 @@
         <a href="index.html" target="_self">
             <h1 id="titulo"><b>No Internet Game</b></h1>
         </a>
+        <nav>
+            <h3 id="subtitulo1">Cómo Jugar</h3>
+            <h3 id="subtitulo2"><a href=#topscores>Top Scores</a></h3>
+        </nav>
     </header>
-    <nav>
-        <h3 id="subtitulo1">Cómo Jugar</h3>
-        <h3 id="subtitulo2">Top Scores</h3>
-    </nav>
+
     <article>
-        <canvas id="juego" width="500" height="350">
-        </canvas>
 
         <section class="container">
             <div>
@@ -61,31 +60,33 @@
             </form>
         </aside>
 
-        <section>
-            <div>
-                <border> </border>
-                <p>
-                    <b>COMO JUGAR</b>
-                </p>
-                <p>
-                    El objetivo es esquivar la mayor cantidad de obstáculos.
-                </p>
-                <p>
-                    Comandos:
-                </p>
-                <p>
-                    Saltar
-                </p>
-                <img src="imagenes/teclas_flechas.png" alt="flechas teclado">
-                <p>
-                    Agacharse
-                </p>
-            </div>
-        </section>
+
     </article>
+    <section>
+        <div>
+            <border> </border>
+            <p>
+                <b>COMO JUGAR</b>
+            </p>
+            <p>
+                El objetivo es esquivar la mayor cantidad de obstáculos.
+            </p>
+            <p>
+                Comandos:
+            </p>
+            <p>
+                Saltar
+            </p>
+            <img id="imagenteclas" src="imagenes/teclas_flechas.png" alt="flechas teclado">
+            <p>
+                Agacharse
+            </p>
+        </div>
+    </section>
+
 
     <footer>
-        <div>
+        <div id="topscores">
             <b>TOP SCORES</b>
             <table>
                 <tbody>

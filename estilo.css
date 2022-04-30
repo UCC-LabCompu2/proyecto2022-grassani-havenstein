@@ -2,25 +2,73 @@
     font-size: 3em;
     text-align: left;
     color: black;
+    padding-top: 35px;
 }
 #principal{
     width: 80px;
     float: left;
     border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-top: 30px;
 }
+
+
+nav
+{
+    position: absolute;
+    padding-left: 600px;
+    top: 20px;
+
+}
+
+#subtitulo1
+{
+    background-color: white; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    border-color: black;
+}
+#subtitulo2
+{
+    background-color: white; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    border-color: black;
+}
+
 table, tr, td, th{
     text-align: center;
 
 }
 a:link, a:visited{
-    color: #ffffff;
+    color: black;
     text-underline-mode: ;
 }
 header{
     background: dimgrey;
-    height: 90px;
+    margin-top: -50px;
+    height: 120px;
     width: 100%;
 }
+
+article
+{
+    margin-top: 90px;
+}
+
 .container{
     float: left;
     width: 60%;
@@ -28,7 +76,22 @@ header{
 form{
     float: right;
     width: 30%;
+    background-color: darkgrey;
 }
+
+section
+
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em
+}
+#imagenteclas
+{
+    width: 40px;
+}
+
+
 .page{
     text-align: center;
     background: white;
