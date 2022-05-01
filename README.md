@@ -1,8 +1,8 @@
 # No Internet Game
-###Autores
+### Autores
 Desarrollado por: Carolina Havenstein y Tobias Grassani.
 En la catedra: laboratorio de Computación II, Universidad Católica de Córdoba.
-###Links de gh-pages
+### Links de gh-pages
 
 ## Contenido de la Pagina
 La pagina tiene como objetivo que el usuario pueda jugar un juego simple. El mismo consiste en esquivar obstaculos ya sea pasando por arriba (saltandolos) o por abajo (agachandose). Tambien el usuario tendria la posibilidad de insertar su nombre, modificar el skin del personaje, ver el top 3 de jugadores...
@@ -29,7 +29,7 @@ Estructura de Proyecto Lab de Compu II - 2022
 - [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
 - [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [x] Se debe emplear algún favicon
-- [ ] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
+- [x] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
 - [ ] Debe haber navegación entre todas las páginas
 
 ### Sobre el HTML
@@ -51,8 +51,8 @@ Estructura de Proyecto Lab de Compu II - 2022
 ### Sobre el CSS
 - [x] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
 - [x] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
-- [ ] Se debe emplear pseudoclase
-- [ ] No emplear !important
+- [x] Se debe emplear pseudoclase
+- [x] No emplear !important
 
 ### Sobre Accesibilidad:
 - [x] Toda imagen debe tener su etiqueta alt

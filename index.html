@@ -16,8 +16,8 @@
 <body>
 <div class="page">
     <header>
-        <img id="sinwifi" src="https://www.systelmexico.com/wp-content/uploads/2020/03/residencial-wifi.gif" alt="logo sin conexión de wifi">
-            <h1 id="titulo"><b>No Internet Game</b></h1>
+        <img id="sinwifi" src="imagenes/no-wifi.gif" alt="logo sin conexión de wifi">
+        <h1 id="titulo"><b>No Internet Game</b></h1>
         <nav>
             <a href="#comojugar"><h3 id="subtitulo1">Como Jugar</h3></a>
             <a href=#topscores><h3 id="subtitulo2">Top Scores</h3></a>
@@ -30,11 +30,12 @@
             <div>
                 <img id="trex" src="imagenes/clasico.png" alt="dinosaurio">
             </div>
+            <canvas></canvas>
         </section>
         <aside>
             <form>
                 <p>
-                    <label>Nombre: <input type="text" name="nombre" placeholder="Nombre" id="nombre"></label>
+                    <label for="nombre">Nombre: </label><input type="text" name="nombre" placeholder="Nombre" id="nombre">
                 </p>
                 <p>
                     <label for="personaje">Personaje:</label>
@@ -59,49 +60,49 @@
             </form>
         </aside>
     </article>
-            <div id="comojugar">
-                <p>
-                    <b>COMO JUGAR</b>
-                </p>
-                <p>
-                    El objetivo es esquivar la mayor cantidad de obstáculos.
-                </p>
-            </div>
-            <div id="controles">
-                <p>
-                    <b>CONTROLES:</b>
-                </p>
-                <p>
-                    Saltar
-                </p>
-                <img id="imagenteclas" src="imagenes/teclas_flechas.png" alt="flechas teclado">
-                <p>
-                    Agacharse
-                </p>
-            </div>
-        <div id="topscores">
-            <b>TOP SCORES</b>
-            <table>
-                <tbody>
-                <tr>
-                    <td>1ST</td>
-                    <td>JOSH</td>
-                    <td>003892</td>
-                </tr>
-                <tr>
-                    <td>2ND</td>
-                    <td>MARK</td>
-                    <td>002235</td>
-                </tr>
-                <tr>
-                    <td>3RD</td>
-                    <td>CARL</td>
-                    <td>002041</td>
-                </tr>
-                </tbody>
-                <caption>Tabla con Top Scores</caption>
-            </table>
-        </div>
+    <div id="comojugar">
+        <p>
+            <b>COMO JUGAR</b>
+        </p>
+        <p>
+            El objetivo es esquivar la mayor cantidad de obstáculos.
+        </p>
+    </div>
+    <div id="controles">
+        <p>
+            <b>CONTROLES:</b>
+        </p>
+        <p>
+            Saltar
+        </p>
+        <img id="imagenteclas" src="imagenes/teclas_flechas.png" alt="flechas teclado">
+        <p>
+            Agacharse
+        </p>
+    </div>
+    <div id="topscores">
+        <b>TOP SCORES</b>
+        <table>
+            <tbody>
+            <tr>
+                <td>1ST</td>
+                <td>JOSH</td>
+                <td>003892</td>
+            </tr>
+            <tr>
+                <td>2ND</td>
+                <td>MARK</td>
+                <td>002235</td>
+            </tr>
+            <tr>
+                <td>3RD</td>
+                <td>CARL</td>
+                <td>002041</td>
+            </tr>
+            </tbody>
+            <caption>Tabla con Top Scores</caption>
+        </table>
+    </div>
 
 
 </div>

@@ -80,6 +80,9 @@ form{
     background-color: white;
 
 }
+#botonjugar:hover{
+    background: steelblue;
+}
 section {
     margin-left: auto;
     margin-right: auto;
