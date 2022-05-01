@@ -1,11 +1,15 @@
 # No Internet Game
+
 ### Autores
 Desarrollado por: Carolina Havenstein y Tobias Grassani.
 En la catedra: laboratorio de Computación II, Universidad Católica de Córdoba.
+
 ### Links de gh-pages
+###### https://ucc-labcompu2.github.io/proyecto2022-grassani-havenstein.github.io/
 
 ## Contenido de la Pagina
 La pagina tiene como objetivo que el usuario pueda jugar un juego simple. El mismo consiste en esquivar obstaculos ya sea pasando por arriba (saltandolos) o por abajo (agachandose). Tambien el usuario tendria la posibilidad de insertar su nombre, modificar el skin del personaje, ver el top 3 de jugadores...
+
 ## Tecnologias Utilizadas
 - Para la estructura de la pagina se utilizo HTML5. (listado de herramientas insertadas)
 - La parte visual se desarrolló en CSS. Para lo que se creo una style sheet ...
@@ -20,21 +24,21 @@ Estructura de Proyecto Lab de Compu II - 2022
 - [x] El proyecto debe estar subido al repositorio adecuado "Proyecto2022-ApellidoAlumno1-ApellidoAlumno2"
 - [x] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores con nombre y apellido, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
 - [x] La estructura del proyecto debe ser adecuada (crear una carpeta para las imágenes, otra para los sketch/mockups/Wireframes). Es importante que contenga SKETCH y MOCKUP/WIREFRAME (debe estar en formato: PDF, PNG o JPG).
-- [ ] El código debe estar pusheado en el repositorio (emplear gh-pages ó publicar la página desde el main), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
+- [x] El código debe estar pusheado en el repositorio (emplear gh-pages ó publicar la página desde el main), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
 - [x] Publicar la Web empleando GitHubPages
-- [ ] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
+- [x] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
 
 ### Sobre el Proyecto General
 - [x] La página principal debe llamarse index
-- [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
-- [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
+- [x] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
+- [x] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [x] Se debe emplear algún favicon
 - [x] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
-- [ ] Debe haber navegación entre todas las páginas
+- [x] Debe haber navegación entre todas las páginas
 
 ### Sobre el HTML
-- [ ] Todas las etiquetas deben estar en minúscula
-- [ ] Poner comillas a todos los atributos
+- [x] Todas las etiquetas deben estar en minúscula
+- [x] Poner comillas a todos los atributos
 - [x] Title debe contener el título de la página
 - [x] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripcion y palabras clave
 - [x] Emplear al menos 3 etiquetas semánticas diferentes (header, nav, aside, section, article, footer)
@@ -42,11 +46,11 @@ Estructura de Proyecto Lab de Compu II - 2022
 - [x] Debe haber por lo menos una etiqueta ```<img>``` en la página.
 - [x] La estructura de la página debe estar definida con ```<div></div>```
 - [x] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` ó ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
-- [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
-- [ ] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
-- [ ] No utilizar etiquetas deprecadas.
-- [ ] Todas las etiquetas deben estar correctamente cerradas
-- [ ] Los ids de los elementos deben ser unívocos
+- [x] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
+- [x] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
+- [x] No utilizar etiquetas deprecadas.
+- [x] Todas las etiquetas deben estar correctamente cerradas
+- [x] Los ids de los elementos deben ser unívocos
 
 ### Sobre el CSS
 - [x] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).

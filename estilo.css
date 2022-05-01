@@ -35,6 +35,9 @@ header{
     display: inline-block;
     background-color: white;
 }
+#subtitulo1:hover{
+    background: #e1c296;
+}
 #subtitulo2 {
     background-color: white;
     border-radius: 10%;
@@ -43,6 +46,9 @@ header{
     display: inline-block;
     font-size: 16px;
     color: black;
+}
+#subtitulo2:hover{
+    background: #e1c296;
 }
 nav {
     position: absolute;
@@ -78,10 +84,9 @@ form{
     padding: 10px 20px;
     display: inline-block;
     background-color: white;
-
 }
 #botonjugar:hover{
-    background: steelblue;
+    background: #e1c296;
 }
 section {
     margin-left: auto;
