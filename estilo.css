@@ -4,11 +4,9 @@
     display: table;
     width: 100%;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 3.5em;
 }
 header{
     background: dimgrey;
-    margin-top: -50px;
     height: 120px;
     width: 100%;
 }
@@ -16,9 +14,7 @@ header{
     width: 80px;
     float: left;
     border-radius: 50%;
-    margin-right: 15px;
-    margin-left: 20px;
-    margin-top: 30px;
+    margin: 30px 15px 30px 20px;
 }
 #titulo{
     font-size: 3em;
@@ -26,14 +22,17 @@ header{
     color: black;
     padding-top: 35px;
 }
+.navegacion{
+
+}
 #subtitulo1 {
-    font-size: 16px;
-    text-align: center;
-    color: black;
+    background-color: white;
     border-radius: 10%;
     padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
     display: inline-block;
-    background-color: white;
 }
 #subtitulo1:hover{
     background: #e1c296;
@@ -43,35 +42,25 @@ header{
     border-radius: 10%;
     padding: 10px 20px;
     text-align: center;
-    display: inline-block;
     font-size: 16px;
     color: black;
+    display: inline-block;
 }
 #subtitulo2:hover{
     background: #e1c296;
 }
-nav {
-    position: absolute;
-    padding-left: 600px;
-    top: 20px;
-}
-article {
-    margin-top: 2em;
-}
 .juego{
+    width: 60%;
     float: left;
-    width: auto;
     border: 1px solid black;
-    margin-left: 4em;
-    padding: 2em;
 }
 #trex{
-    width: 50em;
+    width: 100%;
 }
 form{
-    font-size: 2em;
-    float: left;
-    width: auto;
+    font-size: 1.8em;
+    float: right;
+    width: 20;%
     text-align: center;
     padding: 1em;
     background-color: darkgrey;
@@ -88,11 +77,7 @@ form{
 #botonjugar:hover{
     background: #e1c296;
 }
-section {
-    margin-left: auto;
-    margin-right: auto;
-    width: 15em;
-}
+
 #comojugar{
     float: left;
     text-align: center;
