@@ -6,31 +6,34 @@
     font-family: 'Raleway', sans-serif;
 }
 header{
+    margin-top: -20px;
     background: dimgrey;
     height: 120px;
     width: 100%;
+    display: block
 }
 #sinwifi{
-    width: 80px;
+    display: block;
+    height: 120px;
     float: left;
-    border-radius: 50%;
-    margin: 30px 15px 30px 20px;
+    padding: 5px;
 }
 #titulo{
     font-size: 3em;
-    text-align: left;
     color: black;
-    padding-top: 35px;
+    float: left;
+    padding-top: 10px;
 }
-.navegacion{
-
+nav{
+    float: left;
+    padding-top: 30px;
+    margin-left: 80px;
 }
 #subtitulo1 {
     background-color: white;
-    border-radius: 10%;
+    border-radius: 10px;
     padding: 10px 20px;
-    text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     color: black;
     display: inline-block;
 }
@@ -39,62 +42,78 @@ header{
 }
 #subtitulo2 {
     background-color: white;
-    border-radius: 10%;
+    border-radius:10px;
     padding: 10px 20px;
-    text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     color: black;
     display: inline-block;
+    margin-left: 2px;
 }
 #subtitulo2:hover{
     background: #e1c296;
 }
 .juego{
-    width: 60%;
+    margin: 2% 1% 5% 4% ;
+    width: 55%;
+    height: 400px;
     float: left;
-    border: 1px solid black;
+    display: inline-block;
 }
 #trex{
-    width: 100%;
+    width: 98%;
+}
+aside{
+    margin: 2% 4% 5% 1%;
+    float: right;
+    width: 35%;
+    height: 400px;
+    background-color: darkgrey;
+    display: inline-block;
 }
 form{
     font-size: 1.8em;
-    float: right;
-    width: 20;%
-    text-align: center;
-    padding: 1em;
-    background-color: darkgrey;
+    padding: 50px 0 50px 0;
+}
+input{
+    width: 180px;
+    font-size: 1em;
+}
+select{
+    width: auto;
+    font-size: 1em;
+}
+option{
+    width: 140px;
+    font-size: 0.5em;
 }
 #botonjugar{
-    font-size: 1.3em;
-    text-align: center;
+    font-size: 1.5em;
     color: black;
-    border-radius: 10%;
+    border-radius: 10px;
     padding: 10px 20px;
     display: inline-block;
     background-color: white;
 }
 #botonjugar:hover{
-    background: #e1c296;
+    background: mediumpurple;
 }
-
 #comojugar{
     float: left;
-    text-align: center;
     font-size: 2em;
     margin-top: 1em;
     margin-left: 6em;
     padding: 2em;
     background-color: darkgrey;
+    display: inline-block;
 }
 #topscores{
     float: right;
-    text-align: center;
     font-size: 2em;
     margin-top: 2em;
     margin-right: 2em;
     padding: 1.8em;
     background-color: darkgrey;
+    display: inline-block;
 }
 #controles{
     float: right;
@@ -104,19 +123,11 @@ form{
     padding-left: 3em;
     padding-right: 3em;
     background-color: darkgrey;
-
+    display: inline-block;
 }
 #imagenteclas {
     width: 40px;
 }
-
-
-body{
-    background: white;
-}
-
-
 a:link, a:visited, a:active {
     text-decoration:none;
 }
-
