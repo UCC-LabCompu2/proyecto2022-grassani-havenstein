@@ -54,10 +54,11 @@ nav{
 }
 .juego{
     margin: 2% 1% 5% 4% ;
-    width: 55%;
+    width: 54%;
     height: 400px;
     float: left;
     display: inline-block;
+    border: 1px solid black ;
 }
 #trex{
     width: 98%;
@@ -69,6 +70,7 @@ aside{
     height: 400px;
     background-color: darkgrey;
     display: inline-block;
+    border: 1px solid black ;
 }
 form{
     font-size: 1.8em;

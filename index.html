@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
 <div class="page">
@@ -28,9 +29,6 @@
     <article>
 
         <section class="juego">
-            <div>
-                <img id="trex" src="imagenes/clasico.png" alt="dinosaurio">
-            </div>
             <canvas></canvas>
         </section>
         <aside>
@@ -56,7 +54,7 @@
                     </select>
                 </p>
                 <p>
-                    <button id="botonjugar" type="button"><b>JUGAR</b></button>
+                    <button id="botonjugar" type="button" onclick="empezarJuego()"><b>JUGAR</b></button>
                 </p>
             </form>
         </aside>
