@@ -5,7 +5,7 @@ Desarrollado por: Carolina Havenstein y Tobias Grassani.
 En la catedra: laboratorio de Computación II, Universidad Católica de Córdoba.
 
 ### Links de gh-pages
-###### https://ucc-labcompu2.github.io/proyecto2022-grassani-havenstein.github.io/
+###### https://ucc-labcompu2.github.io/proyecto2022-grassani-havenstein
 
 ## Contenido de la Pagina
 La pagina tiene como objetivo que el usuario pueda jugar un juego simple. El mismo consiste en esquivar obstaculos ya sea pasando por arriba (saltandolos) o por abajo (agachandose). Tambien el usuario tendria la posibilidad de insertar su nombre, modificar el skin del personaje, ver el top 3 de jugadores...
