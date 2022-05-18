@@ -1,3 +1,3 @@
-empezarJuego() {
+function empezarJuego() {
 
 }
