@@ -52,13 +52,14 @@ nav{
 #subtitulo2:hover{
     background: #e1c296;
 }
-.juego{
+#juego{
     margin: 2% 1% 5% 4% ;
     width: 54%;
     height: 400px;
     float: left;
     display: inline-block;
     border: 1px solid black ;
+    background: #eee ;
 }
 #trex{
     width: 98%;

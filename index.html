@@ -13,9 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="funciones.js"></script>
+
 </head>
-<body>
+<body onload="startGame()">
 <div class="page">
     <header>
         <img id="sinwifi" src="imagenes/no-wifi.gif" alt="logo sin conexión de wifi">
@@ -28,8 +28,8 @@
 
     <article>
 
-        <section class="juego">
-            <canvas></canvas>
+        <section>
+            <canvas id="juego"></canvas>
         </section>
         <aside>
             <form>
@@ -54,7 +54,7 @@
                     </select>
                 </p>
                 <p>
-                    <button id="botonjugar" type="button" onclick="empezarJuego()"><b>JUGAR</b></button>
+                    <button id="botonjugar" type="button"><b>JUGAR</b></button>
                 </p>
             </form>
         </aside>
@@ -106,4 +106,5 @@
 
 </div>
 </body>
+<script type="text/javascript" src="funciones.js"></script>
 </html>
