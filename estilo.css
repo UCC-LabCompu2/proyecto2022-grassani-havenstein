@@ -61,7 +61,7 @@ nav{
     border: 1px solid black ;
     background: #eee ;
 }
-#player{
+#jugador {
     width: 40px;
     height: 70px;
     background-color: red;
@@ -72,14 +72,14 @@ nav{
 .salto {
     animation: saltar 500ms;
 }
-#block{
+#bloque{
     width: 20px;
     height: 50px;
     background-color: black;
     position: relative;
     top: 200px;
     left: 97%;
-    animation: block 1s infinite linear;
+    animation: bloque 1s infinite linear;
 }
 @keyframes saltar {
     0%{top:250px}
@@ -88,7 +88,7 @@ nav{
     100%{top: 250px}
     
 }
-@keyframes block {
+@keyframes bloque {
     0%{left: 97%;}
     100%{left: 0;}
 }
