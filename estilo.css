@@ -83,8 +83,8 @@ nav{
 }
 @keyframes saltar {
     0%{top:250px}
-    30%{top: 200px}
-    70%{top: 200px}
+    30%{top: 180px}
+    70%{top: 180px}
     100%{top: 250px}
     
 }

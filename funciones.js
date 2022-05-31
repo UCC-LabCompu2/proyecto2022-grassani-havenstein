@@ -1,5 +1,46 @@
 var jugador = document.getElementById("jugador");
 var bloque = document.getElementById("bloque");
 function saltar() {
+    if(jugador.classList !== "salto"){
     jugador.classList.add("salto")
+    }
+    setTimeout(function (){
+        jugador.classList.remove("salto");
+    },500)
 }
+var checkChoque = setInterval(function (){
+    var jugadorTop = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
+    var bloqueLeft = parseInt(window.getComputedStyle(bloque).getPropertyValue("left"));
+    if (bloqueLeft<140 && bloqueLeft>100 && jugadorTop >= 200){
+        bloque.style.animation = "none";
+        bloque.style.display = "none";
+        alert("GAME OVER");
+    }
+})
+var arribaPresionado = false;
+var abajoPresionado = false;
+
+document.addEventListener("keydown",keyDownHandler, false);
+document.addEventListener("keyup",keyUpHandler, false);
+
+function keyDownHandler(e) {
+    if(e.keyCode === 38 || e.keyCode === 32 ) {
+        arribaPresionado = true;
+        saltar();
+    }else if(e.keyCode === 40) {
+        abajoPresionado = true;
+    }
+}
+function keyUpHandler(e) {
+    if(e.keyCode === 38 || e.keyCode === 32 ) {
+        arribaPresionado = false;
+    }else if(e.keyCode === 40) {
+        abajoPresionado = false;
+    }
+}
+// Se deshabilita scroll con flechas (fuente: https://www.mejorcodigo.com/p/70665.html)
+window.addEventListener("keydown", function(e) {
+    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+    }
+}, false);
