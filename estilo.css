@@ -127,7 +127,7 @@ option{
     width: 140px;
     font-size: 0.5em;
 }
-#botonjugar{
+#botonJugar{
     font-size: 1.5em;
     color: black;
     border-radius: 10px;
@@ -135,10 +135,10 @@ option{
     display: inline-block;
     background-color: white;
 }
-#botonjugar:hover{
+#botonJugar:hover{
     background: mediumpurple;
 }
-#comojugar{
+#comoJugar{
     float: left;
     font-size: 2em;
     margin-top: 1em;
@@ -147,7 +147,7 @@ option{
     background-color: darkgrey;
     display: inline-block;
 }
-#topscores{
+#topScores{
     float: right;
     font-size: 2em;
     margin-top: 2em;
@@ -166,7 +166,7 @@ option{
     background-color: darkgrey;
     display: inline-block;
 }
-#imagenteclas {
+#imagenTeclas {
     width: 40px;
 }
 a:link, a:visited, a:active {

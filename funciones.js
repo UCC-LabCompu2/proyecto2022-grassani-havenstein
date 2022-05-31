@@ -1,3 +1,4 @@
+// Dinamica
 var jugador = document.getElementById("jugador");
 var bloque = document.getElementById("bloque");
 function saltar() {
@@ -25,6 +26,8 @@ var checkChoque = setInterval(function (){
         alert("GAME OVER");
     }
 })
+
+// Controles
 var arribaPresionado = false;
 var abajoPresionado = false;
 
@@ -53,3 +56,10 @@ window.addEventListener("keydown", function(e) {
         e.preventDefault();
     }
 }, false);
+
+//Configuracion
+// Ver forma de activar animacion de css mediante un eventhandler via click en #botonJugar
+// Ver forma de cambiar fondos
+// Ver forma de cambiar personaje
+// Ver forma de generar score
+
