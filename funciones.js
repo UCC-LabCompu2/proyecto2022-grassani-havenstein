@@ -8,10 +8,18 @@ function saltar() {
         jugador.classList.remove("salto");
     },500)
 }
+function agachar() {
+    if(jugador.classList !== "agachado"){
+        jugador.classList.add("agachado")
+    }
+    setTimeout(function (){
+        jugador.classList.remove("salto");
+    },500)
+}
 var checkChoque = setInterval(function (){
     var jugadorTop = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
     var bloqueLeft = parseInt(window.getComputedStyle(bloque).getPropertyValue("left"));
-    if (bloqueLeft<140 && bloqueLeft>100 && jugadorTop >= 200){
+    if (bloqueLeft<140 && bloqueLeft>100 && (jugadorTop >= 200 || jugadorTop <= 140)){
         bloque.style.animation = "none";
         bloque.style.display = "none";
         alert("GAME OVER");
@@ -29,11 +37,12 @@ function keyDownHandler(e) {
         saltar();
     }else if(e.keyCode === 40) {
         abajoPresionado = true;
+        agachar();
     }
 }
 function keyUpHandler(e) {
     if(e.keyCode === 38 || e.keyCode === 32 ) {
-        arribaPresionado = false;
+        arribaPresionado = true;
     }else if(e.keyCode === 40) {
         abajoPresionado = false;
     }
