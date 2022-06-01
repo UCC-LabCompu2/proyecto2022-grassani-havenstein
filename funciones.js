@@ -1,6 +1,6 @@
 // Dinamica
 var jugador = document.getElementById("jugador");
-var bloque = document.getElementById("bloque");
+var bloque = document.getElementById("bloque1");
 function saltar() {
     if(jugador.classList !== "salto"){
     jugador.classList.add("salto")
@@ -58,7 +58,11 @@ window.addEventListener("keydown", function(e) {
 }, false);
 
 //Configuracion
-// Ver forma de activar animacion de css mediante un eventhandler via click en #botonJugar
+function activarJuego() {
+    const bloque = document.getElementById("bloque1");
+    bloque.style.animationPlayState = 'running';
+    //setInterval() generar un avance de dificultar, que cada x segundos la animacion acelere
+}
 // Ver forma de cambiar fondos
 // Ver forma de cambiar personaje
 // Ver forma de generar score
