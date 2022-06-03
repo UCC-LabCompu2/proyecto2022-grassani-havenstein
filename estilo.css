@@ -58,8 +58,9 @@ nav{
     height: 400px;
     float: left;
     display: inline-block;
-    border: 1px solid black ;
-    background: #eee ;
+    border: 1px solid black;
+    background: #eee;
+
 }
 #jugador {
     width: 40px;

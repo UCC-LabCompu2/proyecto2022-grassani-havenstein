@@ -50,7 +50,8 @@
                 </p>
                 <p>
                     <label for="fondo">Fondo:</label>
-                    <select id="fondo">
+                    <select id="fondo" onchange="cambiarFondo(this.value)">
+                        <option value="gris">Gris</option>
                         <option value="clasico">Clásico</option>
                         <option value="desierto">Desierto</option>
                         <option value="ciudad">Ciudad</option>
