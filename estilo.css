@@ -63,9 +63,10 @@ nav{
 
 }
 #jugador {
-    width: 40px;
+    width: 70px;
     height: 70px;
-    background-color: red;
+    background: url("imagenes/mikeWazoski.png");
+    background-size: 70px;
     position: relative;
     top: 250px;
     left: 100px;
