@@ -1,4 +1,5 @@
 var canvas = document.getElementById("juego");
+var jugador = document.getElementById("jugador");
 var ctx = canvas.getContext("2d");
 var x = canvas.width;
 var y = canvas.height;
@@ -53,4 +54,28 @@ function cambiarFondo(img) {
             break;
     }
 }
-
+/**
+ * Cambia el skin del personake al seleccionar en una de las opciones
+ * @method cambiarSkin
+ * @param {string} skin - Almacena el valor de la opcion seleccionada por el usuario
+ */
+function cambiarSkin(skin) {
+    switch(skin) {
+        case "dinosaurio":
+            jugador.style.background = 'url("imagenes/dino.png")';
+            jugador.style.backgroundSize = '70px';
+            break;
+        case "shrek":
+            jugador.style.background = 'url("imagenes/shrek.png")';
+            jugador.style.backgroundSize = '70px';
+            break;
+        case "perro":
+            jugador.style.background = 'url("imagenes/perroSalchicha.png")';
+            jugador.style.backgroundSize = '70px';
+            break;
+        case "mikeWazowski":
+            jugador.style.background = 'url("imagenes/mikeWazoski.png")';
+            jugador.style.backgroundSize = '80px';
+            break;
+    }
+}
