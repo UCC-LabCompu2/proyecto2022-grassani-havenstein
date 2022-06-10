@@ -5,7 +5,7 @@ var x = canvas.width;
 var y = canvas.height;
 
 /**
- * Temporizador en lienzo canvas desde 3 hasta 1. Utilizado para indicar al jugador cuando iniciar
+ * Genera un temporizador sobre lienzo canvas desde 3 hasta 1. Utilizado para indicar al jugador cuando iniciar
  * @method activarReloj
  */
 function activarReloj() {
@@ -32,7 +32,7 @@ function activarReloj() {
 /**
  * Cambia el fondo del canvas al seleccionar en una de las opciones
  * @method cambiarFondo
- * @param {string} img - Almacena el valor de la opcion seleccionada por el usuario
+ * @param {string} img - Almacena el valor de la opcion seleccionada de fondo por el usuario
  */
 function cambiarFondo(img) {
     switch(img) {
@@ -57,7 +57,7 @@ function cambiarFondo(img) {
 /**
  * Cambia el skin del personake al seleccionar en una de las opciones
  * @method cambiarSkin
- * @param {string} skin - Almacena el valor de la opcion seleccionada por el usuario
+ * @param {string} skin - Almacena el valor de la opcion seleccionada de skin por el usuario
  */
 function cambiarSkin(skin) {
     switch(skin) {
