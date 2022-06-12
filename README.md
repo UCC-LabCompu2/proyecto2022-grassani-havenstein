@@ -10,7 +10,7 @@ En la cátedra: Laboratorio de Computación II, Universidad Católica de Córdob
 ## Contenido de la Página
 La página tiene como objetivo que el usuario pueda jugar un juego simple.
 El mismo consiste en esquivar obstáculos ya sea pasando por arriba (saltándolos) o por abajo (agachandose). 
-También el usuario tendrá la posibilidad de insertar su nombre, modificar el skin del personaje, ver el top 3 de jugadores...
+También el usuario tendrá la posibilidad de insertar su nombre, modificar el skin del personaje...
 
 ## Tecnologías Utilizadas
 - Para la estructura de la página se utilizó HTML5. (listado de herramientas insertadas)
@@ -81,12 +81,12 @@ Estructura de Proyecto Lab de Compu II - 2022
 
 ### Sobre la funcionalidad JavaScript
 Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
-- [ ] Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
-- [ ] Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.
+- [x] Una función que compruebe si los valores ingresados son correctos, y si no lo son, que le indique al usuario por un alert, y que blanquee el contenido del campo.
+- [x] Una función que calcule algo en base a los valores ingresados por el usuario en los inputs.
 - [x] Una función que realice un dibujo sobre un canvas (debe ser representativo y acorde a los valores ingreados).
 
 ### Sobre la documentación
-- [ ] TODAS las funciones javaScript deben estar comentadas adecuadamente. [JsDoc](https://jsdoc.app/about-getting-started.html)
+- [x] TODAS las funciones javaScript deben estar comentadas adecuadamente. [JsDoc](https://jsdoc.app/about-getting-started.html)
    ```/**
      * Descripción de que hace la función
      * @method Nombre de la función
