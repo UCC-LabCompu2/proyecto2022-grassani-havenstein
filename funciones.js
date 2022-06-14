@@ -37,7 +37,9 @@ function activarReloj() {
         clearInterval(reloj);
         canvas.width=canvas.width;
     }else {
-    reloj;}
+        reloj;
+        setTimeout(function (){
+            document.getElementById("botonJugar").disabled = true;},4000) }
 }
 /**
  * Cambia el fondo del canvas al seleccionar en una de las opciones
