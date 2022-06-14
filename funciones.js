@@ -29,7 +29,7 @@ function activarReloj() {
             ctx.font = "10px";
             ctx.fillText("Player:", 5, 15 );
             ctx.fillText(nombre, 40, 15 );
-            ctx.fillText("Score: 0", 50, 15 );
+            ctx.fillText("Score: 0", 230, 15 );
         }
     },1000,);
     if(nombre === ""){
