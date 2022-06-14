@@ -13,6 +13,7 @@ function activarReloj() {
     var i=3;
     var nombre = document.getElementsByName("nombre")[0].value;
     var reloj = setInterval(function () {
+        document.getElementById("botonJugar").disabled = true;
         canvas.width = canvas.width;
         if(i>0){
             ctx.font = "50px Raleway";
@@ -33,7 +34,6 @@ function activarReloj() {
             ctx.fillText("Score: 0", 230, 15 );
         }
     },1000,);
-    reloj;
     if(nombre === ""){
         alert("Debe ingresar un nombre para inicar el juego.");
         clearInterval(reloj);
