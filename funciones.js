@@ -5,7 +5,8 @@ var x = canvas.width;
 var y = canvas.height;
 
 /**
- * Genera un temporizador sobre lienzo canvas desde 3 hasta 1. Utilizado para indicar al jugador cuando iniciar. Terminado el temporizador, inserta el nombre del jugador.
+ * Genera un temporizador sobre lienzo canvas desde 3 hasta 1. Utilizado para indicar al jugador cuando iniciar.
+ * Terminado el temporizador, inserta el nombre del jugador.
  * @method activarReloj
  */
 function activarReloj() {
@@ -32,14 +33,13 @@ function activarReloj() {
             ctx.fillText("Score: 0", 230, 15 );
         }
     },1000,);
+    reloj;
     if(nombre === ""){
         alert("Debe ingresar un nombre para inicar el juego.");
         clearInterval(reloj);
         canvas.width=canvas.width;
     }else {
-        reloj;
-        setTimeout(function (){
-            document.getElementById("botonJugar").disabled = true;},4000) }
+        reloj;}
 }
 /**
  * Cambia el fondo del canvas al seleccionar en una de las opciones
