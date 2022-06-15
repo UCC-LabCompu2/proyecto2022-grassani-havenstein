@@ -33,7 +33,7 @@ function activarReloj() {
             ctx.fillText(nombre, 40, 15 );
             ctx.fillText("Score: 0", 230, 15 );
         }
-    },1000,);
+    },1000);
     if(nombre === ""){
         alert("Debe ingresar un nombre para inicar el juego.");
         clearInterval(reloj);
