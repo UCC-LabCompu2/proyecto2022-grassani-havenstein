@@ -99,13 +99,13 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
 ### Sobre las correcciones
 * Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega
 * Las notas serán de manera logarítmica: (Por ejemplo 60% 4; 70% 5,5; 80% 7; 90% 8,5)
-* Las sugerencias sobre el HTML y CSS realizadas en el anterior parcial dejen ser corregidas.
+* Las sugerencias sobre el HTML y CSS realizadas en el anterior parcial deben ser corregidas.
 
 
 ## Requisitos del FINAL
-- [ ] Todas las correcciones y mejoras solicitadas durante el primer y segundo parcial deben estar corregidas.
-- [ ] No debe haber errores presentes en el código (realizar Code > Inspect Code para verificar que no haya errores)
-- [ ] No debe haber errores JavaScript presentes (F12 > Consola)
-- [ ] Debe cumplir con TODOS los requisitos del 1er y 2do Parcial (si se agrego código nuevo en Js, se debe documentar, si hay nuevos inputs de html deben contener su label, etc)
-- [ ] El Canvas debe poseer animación con setInterval() o requestAnimationFrame()
-- [ ] El cálculo del ejercicio de física/etc debe ser el correcto, independientemente de los valores ingresados.
+- [X] Todas las correcciones y mejoras solicitadas durante el primer y segundo parcial deben estar corregidas.
+- [X] No debe haber errores presentes en el código (realizar Code > Inspect Code para verificar que no haya errores)
+- [X] No debe haber errores JavaScript presentes (F12 > Consola)
+- [X] Debe cumplir con TODOS los requisitos del 1er y 2do Parcial (si se agrego código nuevo en Js, se debe documentar, si hay nuevos inputs de html deben contener su label, etc)
+- [X] El Canvas debe poseer animación con setInterval() o requestAnimationFrame()
+- [X] El cálculo del ejercicio de física/etc debe ser el correcto, independientemente de los valores ingresados.
