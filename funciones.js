@@ -1,5 +1,6 @@
 var canvas = document.getElementById("juego");
 var jugador = document.getElementById("jugador");
+var bloque = document.getElementById("bloque1");
 var ctx = canvas.getContext("2d");
 var x = canvas.width;
 var y = canvas.height;
@@ -21,7 +22,9 @@ function activarReloj() {
         }
         else if(i===0){
             ctx.font = "50px Raleway";
-            ctx.fillText("GO", (x-75) / 2, y / 2); }
+            ctx.fillText("GO", (x-75) / 2, y / 2);
+            const bloque = document.getElementById("bloque1");
+            bloque.style.animationPlayState = 'running';}
         else {
             canvas.width = canvas.width;
         }
@@ -91,5 +94,48 @@ function cambiarSkin(skin) {
             break;
     }
 }
+/**
+ *
+ * @method saltar
+ */
+function saltar() {
+    if(jugador.classList !== "salto"){
+        jugador.classList.add("salto")
+    }
+    setTimeout(function (){
+        jugador.classList.remove("salto");
+    },500)
+}
+var checkChoque = setInterval(function (){
+    var jugadorTop = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
+    var bloqueLeft = parseInt(window.getComputedStyle(bloque).getPropertyValue("left"));
+    if (bloqueLeft<140 && bloqueLeft>100 && (jugadorTop >= 200 || jugadorTop <= 140)){
+        bloque.style.animation = "none";
+        bloque.style.display = "none";
+        alert("GAME OVER");
+    }
+})
+var arribaPresionado = false;
+var abajoPresionado = false;
 
+document.addEventListener("keydown",keyDownHandler, false);
+document.addEventListener("keyup",keyUpHandler, false);
 
+function keyDownHandler(e) {
+    if(e.keyCode === 38 || e.keyCode === 32 ) {
+        arribaPresionado = true;
+        saltar();
+    }
+}
+function keyUpHandler(e) {
+    if(e.keyCode === 38 || e.keyCode === 32 ) {
+        arribaPresionado = true;
+    }else if(e.keyCode === 40) {
+        abajoPresionado = false;
+    }
+}
+window.addEventListener("keydown", function(e) {
+    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+    }
+}, false);
