@@ -19,12 +19,15 @@ function activarReloj() {
         if(i>0){
             ctx.font = "50px Raleway";
             ctx.fillText(i, (x-25) / 2, y / 2);
+            if(i===1){
+                const bloque = document.getElementById("bloque1");
+                bloque.style.animationPlayState = 'running';
+            }
         }
         else if(i===0){
             ctx.font = "50px Raleway";
-            ctx.fillText("GO", (x-75) / 2, y / 2);
-            const bloque = document.getElementById("bloque1");
-            bloque.style.animationPlayState = 'running';}
+            ctx.fillText("GO", (x-75) / 2, y / 2)
+        }
         else {
             canvas.width = canvas.width;
         }
@@ -113,6 +116,7 @@ var checkChoque = setInterval(function (){
         bloque.style.animation = "none";
         bloque.style.display = "none";
         alert("GAME OVER");
+        window.location.reload();
     }
 })
 var arribaPresionado = false;

@@ -76,7 +76,7 @@ nav{
 #bloque1{
     width: 20px;
     height: 50px;
-    background-color: black;
+    background:url("imagenes/cactus.png");
     position: relative;
     top: 200px;
     left: 715px;
@@ -99,8 +99,8 @@ nav{
     100%{top: 250px}
 }
 @keyframes bloque {
-    0%{left: 97%;}
-    100%{left: 0;}
+    0%{left: 57%;}
+    100%{left: 4%;}
 }
 aside{
     margin: -6.7% 4% 5% 1%;
