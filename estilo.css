@@ -52,6 +52,26 @@ nav{
 #subtitulo2:hover{
     background: #e1c296;
 }
+#nombreTexto{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+#nombreJuego{
+    position: absolute;
+    margin-left: 13%;
+    margin-top: 4%;
+}
+#scoreTexto{
+    position: absolute;
+    margin-left: 44%;
+    margin-top: 4%;
+}
+#scoreJuego{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 4%;
+}
 #juego{
     margin: 2% 1% 5% 4% ;
     width: 54%;

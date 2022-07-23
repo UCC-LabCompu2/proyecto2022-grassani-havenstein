@@ -1,25 +1,25 @@
-var canvas = document.getElementById("juego");
-var jugador = document.getElementById("jugador");
-var bloque = document.getElementById("bloque1");
-var ctx = canvas.getContext("2d");
-var x = canvas.width;
-var y = canvas.height;
+const canvas = document.getElementById("juego");
+const jugador = document.getElementById("jugador");
+const bloque = document.getElementById("bloque1");
+const ctx = canvas.getContext("2d");
+const x = canvas.width;
+const y = canvas.height;
 
 /**
  * Genera un temporizador sobre lienzo canvas desde 3 hasta 1. Utilizado para indicar al jugador cuando iniciar.
- * Terminado el temporizador, inserta el nombre del jugador.
- * @method activarReloj
+ * @method activarJuego
  */
-function activarReloj() {
-    var i=3;
-    var nombre = document.getElementsByName("nombre")[0].value;
-    var reloj = setInterval(function () {
-        document.getElementById("botonJugar").disabled = true;
-        canvas.width = canvas.width;
+function activarJuego() {
+    let i=3;
+    let nombre = document.getElementsByName("nombre")[0].value;
+    document.getElementById("nombreJuego").innerHTML = nombre;
+    let reloj = setInterval(function () {
+    document.getElementById("botonJugar").disabled = true;
+    canvas.width = canvas.width;
         if(i>0){
             ctx.font = "50px Raleway";
             ctx.fillText(i, (x-25) / 2, y / 2);
-            if(i===1){
+            if(i===2){
                 const bloque = document.getElementById("bloque1");
                 bloque.style.animationPlayState = 'running';
             }
@@ -31,14 +31,10 @@ function activarReloj() {
         else {
             canvas.width = canvas.width;
         }
-        i--;
-        if (i <= -2) {
+        if (i <= -1) {
             clearInterval(reloj);
-            ctx.font = "10px";
-            ctx.fillText("Player:", 5, 15 );
-            ctx.fillText(nombre, 40, 15 );
-            ctx.fillText("Score: 0", 230, 15 );
         }
+        i--;
     },1000);
     if(nombre === ""){
         alert("Debe ingresar un nombre para inicar el juego.");
@@ -46,6 +42,16 @@ function activarReloj() {
         canvas.width=canvas.width;
     }else {
         reloj;}
+}
+function score(){
+    let s=-50;
+    setInterval(function (){
+        s++;
+        if(s>=0) {
+           document.getElementById("scoreJuego").innerHTML = s;
+        }
+        },100)
+    return s;
 }
 /**
  * Cambia el fondo del canvas al seleccionar en una de las opciones
@@ -109,19 +115,19 @@ function saltar() {
         jugador.classList.remove("salto");
     },500)
 }
-var checkChoque = setInterval(function (){
-    var jugadorTop = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
-    var bloqueLeft = parseInt(window.getComputedStyle(bloque).getPropertyValue("left"));
+
+const checkChoque = setInterval(function (){
+    let jugadorTop = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
+    let bloqueLeft = parseInt(window.getComputedStyle(bloque).getPropertyValue("left"));
     if (bloqueLeft<140 && bloqueLeft>100 && (jugadorTop >= 200 || jugadorTop <= 140)){
         bloque.style.animation = "none";
         bloque.style.display = "none";
-        alert("GAME OVER");
+        alert("GAME OVER!");
         window.location.reload();
     }
 })
 var arribaPresionado = false;
 var abajoPresionado = false;
-
 document.addEventListener("keydown",keyDownHandler, false);
 document.addEventListener("keyup",keyUpHandler, false);
 

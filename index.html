@@ -29,6 +29,10 @@
     <article>
 
         <section>
+            <h2 id="nombreTexto">Jugador:</h2>
+            <h2 id="nombreJuego"><b></b></h2>
+            <h2 id="scoreTexto"><b>Score:</b></h2>
+            <h2 id="scoreJuego"><b>0</b></h2>
             <canvas id="juego">
             </canvas>
             <div id="jugador"></div>
@@ -58,7 +62,7 @@
                     </select>
                 </p>
                 <p>
-                    <button id="botonJugar" type="button" onclick="activarReloj()"><b>JUGAR</b></button>
+                    <button id="botonJugar" type="button" onclick="activarJuego();score();"><b>JUGAR</b></button>
                 </p>
             </form>
         </aside>
