@@ -27,6 +27,7 @@ function activarJuego() {
         else if(i===0){
             ctx.font = "50px Raleway";
             ctx.fillText("GO", (x-75) / 2, y / 2)
+            score();
         }
         else {
             canvas.width = canvas.width;
@@ -44,7 +45,7 @@ function activarJuego() {
         reloj;}
 }
 function score(){
-    let s=-50;
+    let s=-10;
     setInterval(function (){
         s++;
         if(s>=0) {
