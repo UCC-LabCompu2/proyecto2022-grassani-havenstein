@@ -6,7 +6,7 @@ const x = canvas.width;
 const y = canvas.height;
 
 /**
- * Genera un temporizador sobre lienzo canvas desde 3 hasta 1. Utilizado para indicar al jugador cuando iniciar.
+ * Activa las animaciones, llama a la funcion score(), aplica el nombre del jugador y genera un temporizador en canvas desde 3 hasta 1.
  * @method activarJuego
  */
 function activarJuego() {
@@ -44,6 +44,10 @@ function activarJuego() {
     }else {
         reloj;}
 }
+/**
+ * Genera un puntaje en base al tiempo.
+ * @method score
+ */
 function score(){
     let s=0;
     setInterval(function (){
@@ -53,7 +57,7 @@ function score(){
     return s;
 }
 /**
- * Cambia el fondo del canvas al seleccionar en una de las opciones
+ * Cambia el fondo del canvas al seleccionar una de las cuatro opciones mediante switch.
  * @method cambiarFondo
  * @param {string} img - Almacena el valor de la opcion seleccionada de fondo por el usuario
  */
@@ -78,7 +82,7 @@ function cambiarFondo(img) {
     }
 }
 /**
- * Cambia el skin del personake al seleccionar en una de las opciones
+ * Cambia el skin del personake al seleccionar en una de las cuatro opciones mediante switch.
  * @method cambiarSkin
  * @param {string} skin - Almacena el valor de la opcion seleccionada de skin por el usuario
  */
@@ -103,7 +107,7 @@ function cambiarSkin(skin) {
     }
 }
 /**
- *
+ * Llama y setea un tiempo de la animacion saltar sobre el jugador.
  * @method saltar
  */
 function saltar() {
@@ -114,7 +118,6 @@ function saltar() {
         jugador.classList.remove("salto");
     },500)
 }
-
 const checkChoque = setInterval(function (){
     let jugadorTop = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
     let bloqueLeft = parseInt(window.getComputedStyle(bloque).getPropertyValue("left"));
@@ -125,26 +128,21 @@ const checkChoque = setInterval(function (){
         window.location.reload();
     }
 })
-var arribaPresionado = false;
-var abajoPresionado = false;
+/**
+ * Chequea si las teclas ArrowUp o Spaces estan siendo apretadas, de ser asi llama a la funcion saltar().
+ * @method keyDownHandler
+ */
 document.addEventListener("keydown",keyDownHandler, false);
-document.addEventListener("keyup",keyUpHandler, false);
-
 function keyDownHandler(e) {
     if(e.keyCode === 38 || e.keyCode === 32 ) {
-        arribaPresionado = true;
         saltar();
     }
 }
-function keyUpHandler(e) {
-    if(e.keyCode === 38 || e.keyCode === 32 ) {
-        arribaPresionado = true;
-    }else if(e.keyCode === 40) {
-        abajoPresionado = false;
-    }
-}
+/**
+ * Desactiva la funcion de scroll por default de las teclas Space y ArrowUp.
+ */
 window.addEventListener("keydown", function(e) {
-    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+    if(["Space","ArrowUp"].indexOf(e.code) > -1) {
         e.preventDefault();
     }
 }, false);
