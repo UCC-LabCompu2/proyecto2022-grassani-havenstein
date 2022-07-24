@@ -27,12 +27,12 @@ function activarJuego() {
         else if(i===0){
             ctx.font = "50px Raleway";
             ctx.fillText("GO", (x-75) / 2, y / 2)
-            score();
         }
         else {
             canvas.width = canvas.width;
         }
         if (i <= -1) {
+            score();
             clearInterval(reloj);
         }
         i--;
@@ -45,12 +45,10 @@ function activarJuego() {
         reloj;}
 }
 function score(){
-    let s=-10;
+    let s=0;
     setInterval(function (){
         s++;
-        if(s>=0) {
-           document.getElementById("scoreJuego").innerHTML = s;
-        }
+        document.getElementById("scoreJuego").innerHTML = s;
         },100)
     return s;
 }
